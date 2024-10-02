@@ -17,7 +17,7 @@ tha = Q%*%P; G = matrix(rbinom(n*m, 2, tha), n,m)
 jj = which(apply(G, 2, sd)>0)
 G = G[,jj]; P = P[,jj]
 ## fit admixture model
-a1 = Radmixture(G,K=K, Kem=10,maxit=1e3,rtol=1e-7,trace=TRUE)
+a1 = Radmixture(G,K=K, Kem=5,maxit=1e3,rtol=1e-7,trace=TRUE)
 apply(Q, 2, range); apply(a1$Q, 2, range); cor(Q, a1$Q)
 table(a1$Cs, apply(Q, 1, which.max))
 ## bar/pairwise plots
