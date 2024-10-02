@@ -80,29 +80,7 @@ Radmixture <- function(G, K=2, pinit=NULL, Kem=5, maxit=1e2,rtol=1e-7,trace=FALS
 
 
 
+## .C interface a bit slower
 
 
-
-## .C interface ## a bit slower
-Radmixture0 <- function(G, K=2, pinit=NULL, Kem=5, maxit=1e2,rtol=1e-7,trace=FALSE, ...) {
-    n = dim(G)[1]; m = dim(G)[2]
-    if(is.null(pinit)) {
-        cl = kmeans(scale(G), centers=K, ...)$cluster
-        Q.ki = matrix(table(cl)/length(cl), K,n)
-        P.kj = matrix(0, K,m)
-        for(k in 1:K) {
-            P.kj[k,] = colMeans(G[cl==k,,drop=FALSE], na.rm=TRUE)/2
-        }
-    } else {
-        Q.ki = t(pinit$Q); P.kj = pinit$P
-    }
-
-    obj = .C("radmixture_qp",
-             Q.ki = as.double(Q.ki), P.kj = as.double(P.kj), llk = double(maxit),
-             as.integer(n), as.integer(m), as.double(G), as.integer(K), as.integer(Kem),
-             itMax=as.integer(maxit), as.double(rtol), as.integer(trace), PACKAGE='Radmixture')
-    Q.ki = matrix(obj$Q.ki, K,n); Cs = apply(Q.ki, 2, which.max)
-    P.kj = matrix(obj$P.kj, K,m); ## llk = obj$llk
-    return( list(Q=t(Q.ki), P=P.kj, Cs=Cs, llk=obj$llk[1:min(obj$itMax,maxit)]) )
-}
 
