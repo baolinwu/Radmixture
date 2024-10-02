@@ -27,7 +27,7 @@ ik = apply(abs(cor(Q, a1$Q)), 1, which.max); ik
 cor(t(a1$P[ik,]), t(P))
 matplot(a1$Q[,ik], Q); abline(0,1, col=K+1, lwd=2, lty=2)
 Y = apply(Q, 1, which.max)
-## entropy fitting estimation (ML fitting of a multinomial logit model)
+## cross-entropy estimation (ML fitting of a multinomial logit model)
 ml = nnet::multinom(Y~a1$Q[,-1], maxit=1e3)
 Yc = apply(ml$fitted, 1, which.max)
 table(Y, Yc); mean(Yc!=Y)

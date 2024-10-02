@@ -1,5 +1,5 @@
 Package: Radmixture
-Version: 1.0-1
+Version: 1.0-0
 Date: 2024-10-01
 Depends: R (>= 4.0.0)
 Author: Baolin Wu, Xuan Wu <xuan.wu@uky.edu>
