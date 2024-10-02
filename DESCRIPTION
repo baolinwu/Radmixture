@@ -1,0 +1,12 @@
+Package: Radmixture
+Version: 1.0-1
+Date: 2024-10-01
+Depends: R (>= 4.0.0)
+Author: Baolin Wu, Xuan Wu <xuan.wu@uky.edu>
+Maintainer: Baolin Wu <baolinuc@gmail.com>
+Title: A suite of tools for population structure inference based on the admixture model
+Description: population structure inference based on the admixture model
+License: GPL (version 2 or later)
+Encoding: UTF-8
+URL: http://github.com/baolinwu/Radmixture
+RoxygenNote: 7.3.2
