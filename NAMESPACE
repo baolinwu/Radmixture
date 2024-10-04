@@ -2,4 +2,6 @@
 
 export(Qadmixture)
 export(Radmixture)
+importFrom(nnet,multinom)
+importFrom(stats,kmeans)
 useDynLib(Radmixture)

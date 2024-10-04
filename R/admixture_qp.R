@@ -79,8 +79,4 @@ Radmixture <- function(G, K=2, pinit=NULL, Kem=5, maxit=1e2,rtol=1e-7,trace=FALS
 }
 
 
-
 ## .C interface a bit slower
-
-
-
