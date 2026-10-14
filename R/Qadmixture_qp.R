@@ -22,7 +22,7 @@
 #' }
 #'
 #' @references
-#' X. Wu and B. Wu (2024) Radmixture: an R package for fast and robust likelihood-based estimation of admixture model for global ancestry inference. tech rep.
+#' B. Wu (2026) Radmixture: an R package for fast and robust likelihood-based estimation of admixture model for global ancestry inference. tech rep.
 #'
 #' D.H. Alexander, J. Novembre, and K. Lange (2009) Fast model-based estimation of ancestry in unrelated individuals. Genome Research, 19:1655-1664.
 #'

@@ -15,7 +15,7 @@ A data list hapmap3 with two components
 \url{https://dalexander.github.io/admixture/download.html}
 }
 \usage{
-hapmap3
+data(hapmap3)
 }
 \description{
 Data are constructed from the Phase 3 of the HapMap Project. Selected individuals include:
@@ -45,7 +45,7 @@ cl = apply(ml$fitted, 1, which.max)
 table(cl, Y)
 }
 \references{
-Wu X, and Wu B (2024) Radmixture: an R package for fast and robust likelihood-based estimation of admixture model for global ancestry inference. tech rep.
+Wu B (2026) Radmixture: an R package for fast and robust likelihood-based estimation of admixture model for global ancestry inference. tech rep.
 
 Ko S, Chu BB, Peterson D, Okenwa C, Papp JC, Alexander DH, et al. (2023) Unsupervised discovery of ancestry-informative markers and genetic admixture proportions in biobank-scale datasets. Am J Hum Genet. 2023 Feb 2;110(2):314–25. 
 

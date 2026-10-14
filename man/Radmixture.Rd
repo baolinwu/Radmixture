@@ -69,7 +69,7 @@ Yc = apply(ml$fitted, 1, which.max)
 table(Y, Yc); mean(Yc!=Y)
 }
 \references{
-Wu X and Wu B (2024) Radmixture: an R package for fast and robust likelihood-based estimation of admixture model for global ancestry inference. tech rep.
+Wu B (2026) Radmixture: an R package for fast and robust likelihood-based estimation of admixture model for global ancestry inference. tech rep.
 
 Ko S, Chu BB, Peterson D, Okenwa C, Papp JC, Alexander DH, et al. (2023) Unsupervised discovery of ancestry-informative markers and genetic admixture proportions in biobank-scale datasets. Am J Hum Genet. 2023 Feb 2;110(2):314–25.
 

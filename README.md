@@ -3,7 +3,6 @@
 An R package for fast and roubst estimation of admixture model for population structure inference and related research questions. We combine various acceleration techniques (ECME and quasi-Newton) to improve the algorithm convergence and provide statistical insights to check the model fitting
 and convergence issues.
 
-
 ## Sample codes for running the analysis
 ```
 ## simulate data: mix of ancestry informative markers and null SNPs
